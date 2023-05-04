@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="174" height="24" viewBox="0 0 174 24">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 14.883px;
+        filter: url(#filter);
+        text-anchor: middle;
+        fill: #fff;
+        font-family: Barlow;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        font-size: 13.229px;
+      }
+
+      .cls-3 {
+        font-size: 6.615px;
+      }
+    </style>
+    <filter id="filter" x="27" y="17" width="174" height="24" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ffd033"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="SOPA_DE_SEÑAS" data-name="SOPA DE SEÑAS" class="cls-1" transform="translate(87.216 23.685) scale(1.976)"><tspan x="0">S<tspan class="cls-2">OPA <tspan class="cls-3">DE</tspan> </tspan>S<tspan>EÑAS</tspan></tspan></text>
+</svg>

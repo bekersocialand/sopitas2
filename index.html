@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -49,10 +48,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700;800&display=swap" rel="stylesheet">
     <style>
         @font-face {
-          font-family: 'TheRushBrelako';
-          src: url('assets/fonts/TheRushBrelako.otf') format('truetype');
-          font-style: normal;
-          font-weight: normal;
+            font-family: 'TheRushBrelako';
+            src: url('assets/fonts/TheRushBrelako.otf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
         }
         /* ================== Colores ===============================*/
         
@@ -126,8 +125,6 @@
             background-color: var(--amarillo);
         }
         
-    
-        
         h1 {
             font-size: var(--txt-lg);
             font-weight: bold;
@@ -162,9 +159,10 @@
             text-transform: uppercase;
         }
         
-        .step {    
+        .step {
             position: inherit;
-            margin: auto;}
+            margin: auto;
+        }
         
         .step-2 {
             background-image: url(assets/img/bg_desk_manos-min.webp);
@@ -265,11 +263,12 @@
             background-position: center;
             background-size: cover;
         }
+        
         #traductor::placeholder {
             color: white;
         }
-        .txt-fg
-        {
+        
+        .txt-fg {
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
@@ -280,6 +279,7 @@
             padding: 12px;
             border-radius: 10px;
         }
+        
         .bg-black {
             background: var(--naranja);
         }
@@ -325,10 +325,12 @@
         .hola-container:hover img.hola-letra {
             display: block;
         }
+        
         .txt-sopita {
             margin-top: -15%;
         }
-        .txt-data{
+        
+        .txt-data {
             position: absolute;
             top: 28%;
             left: 53%;
@@ -352,31 +354,34 @@
             text-align: center;
             color: var(--blanco);
         }
-       
+        
         .txt-placa {
             font-size: var(--txt-md);
             position: absolute;
             left: 40%;
             transform: translate(-50%, -50%);
         }
+        
         .pleca {
             position: absolute;
             top: 85.5%;
             margin: auto 0rem;
             left: 3%;
         }
+        
         .topgal {
-             overflow-x: auto;
+            overflow-x: auto;
             white-space: nowrap;
             scrollbar-color: white;
             overflow-y: hidden;
             -webkit-overflow-scrolling: touch;
         }
-
-        .topgal img{
+        
+        .topgal img {
             margin: 15px;
         }
-        .card_senas{
+        
+        .card_senas {
             position: initial;
             display: inline-flex;
             flex-direction: column;
@@ -386,7 +391,8 @@
             width: 280px;
             cursor: pointer;
         }
-        .ms{
+        
+        .ms {
             margin-left: 50%;
             font-style: normal;
             font-weight: 700;
@@ -395,7 +401,8 @@
             color: var(--blanco);
             padding: 5%;
         }
-        .title-senas{
+        
+        .title-senas {
             font-style: normal;
             font-weight: 700;
             font-size: 30px;
@@ -403,7 +410,8 @@
             color: var(--blanco);
             margin: 15px 0;
         }
-        .txt-sn{
+        
+        .txt-sn {
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
@@ -411,38 +419,46 @@
             color: var(--blanco);
             padding: 5%;
         }
+        
         .topgal::-webkit-scrollbar {
             width: 10px;
             height: 5px;
         }
+        
         .topgal::-webkit-scrollbar-track {
             border-radius: 10px;
         }
+        
         .topgal::-webkit-scrollbar-thumb {
             border-radius: 15px;
             -webkit-box-shadow: inset 0 0 0px #ffffff;
             background: var(--blanco);
         }
+        
         .movil {
             display: none;
         }
-        .custom-modal video{
-        width:100%;
-        display: block;
-        height:100%;
+        
+        .custom-modal video {
+            width: 100%;
+            display: block;
+            height: 100%;
             object-fit: cover;
         }
-        .wrapper section{
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          margin:50px 0;
+        
+        .wrapper section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 0;
         }
+        
         .custom-modal .modal-body,
-        .custom-modal .modal-header{
-          padding: 0;
-          border: none;
+        .custom-modal .modal-header {
+            padding: 0;
+            border: none;
         }
+        
         .modal {
             position: fixed;
             top: 100px;
@@ -453,6 +469,7 @@
             overflow: hidden !important;
             outline: 0;
         }
+        
         .custom-modal .modal-header .close {
             margin-top: -33px;
             position: absolute;
@@ -466,6 +483,7 @@
             top: -8px;
             z-index: 1;
         }
+        
         .close {
             float: right;
             font-size: 3.5rem;
@@ -475,22 +493,27 @@
             text-shadow: 0 1px 0 #fff;
             opacity: .5;
         }
+        
         .modal-backdrop.show {
             opacity: 0.9;
         }
-        .custom-modal .modal-content{
-          border-radius: 0;
-          border: none;
+        
+        .custom-modal .modal-content {
+            border-radius: 0;
+            border: none;
         }
-         .wrapper .btn-primary{
-          border:none;
+        
+        .wrapper .btn-primary {
+            border: none;
         }
+        
         .wrapper .btn-primary:active:focus,
-         .wrapper .btn-primary:focus{
-          outline:none;
-          border-color:#337ab7;
-           outline-offset:0;
+        .wrapper .btn-primary:focus {
+            outline: none;
+            border-color: #337ab7;
+            outline-offset: 0;
         }
+        
         .modal-backdrop {
             position: fixed;
             top: 0;
@@ -500,28 +523,31 @@
             height: 100vh;
             background-color: #f9bd2b;
         }
+        
         .mcss {
             float: right;
             width: auto;
         }
-       .dcss{
+        
+        .dcss {
             float: left;
             width: auto;
-       }
-       .contenedor-abe{
+        }
+        
+        .contenedor-abe {
             width: 100%;
             height: 615px;
             text-align: justify;
-       }
-          
+        }
+        
         @media screen and (max-width:992px) {
             section {
                 height: auto;
             }
-            .desktop{
+            .desktop {
                 display: block;
             }
-            .movil{
+            .movil {
                 display: none;
             }
             .mmd {
@@ -531,8 +557,6 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            
-
         }
         
         @media screen and (max-width:768px) {
@@ -603,9 +627,9 @@
                 padding: 12px;
                 border-radius: 10px;
             }
-
         }
-        @media (max-width: 576px){
+        
+        @media (max-width: 576px) {
             h2 {
                 font-size: 36px;
                 font-weight: bold;
@@ -632,10 +656,10 @@
                 left: 38%;
                 transform: translate(-50%, -50%);
             }
-            .desktop{
+            .desktop {
                 display: none;
             }
-            .movil{
+            .movil {
                 display: block;
             }
             .txt-data {
@@ -669,7 +693,6 @@
                 text-align: center;
                 color: var(--blanco);
             }
-        
             img.letra-abc {
                 margin: 10px 15px;
                 max-height: 60px;
@@ -708,8 +731,6 @@
                 -webkit-overflow-scrolling: touch;
                 display: contents;
             }
-            
-            
             .txt-fg {
                 font-style: normal;
                 font-weight: 400;
@@ -738,13 +759,11 @@
                 font-size: 24px;
                 line-height: 29px;
             }
-             
             .hideText {
-              display: none;
+                display: none;
             }
-
             .showText {
-              display: block;
+                display: block;
             }
             .empezar {
                 height: auto;
@@ -810,11 +829,10 @@
                 float: right;
                 width: 45%;
             }
-            .dcss{
+            .dcss {
                 float: left;
                 width: 45%;
             }
-            
         }
     </style>
 </head>
@@ -878,7 +896,7 @@
                     <img src="assets/img/hola-alt-min.webp" class="img-fluid m-auto">
                 </div>
                 <div id="forShare" class="col-md-6 text-center bg-patron py-5 px-2 px-md-5 d-flex align-items-center h-100">
-                    <div  class="translate-box mx-auto p-0 bg-naranja">
+                    <div class="translate-box mx-auto p-0 bg-naranja">
                         <div class="head">
                             <a href=" javascript:void(0);" class="active" data-translate="espa">Español</a>
                             <a href=" javascript:void(0);" class="activaSenia" data-translate="senia">Lengua de
@@ -888,7 +906,7 @@
                             <textarea type="text" value="" maxlength="33" placeholder="Escribe algo y conoce la dactilología" class="textValue"></textarea>
                         </div>
                         <div class="content senia">
-                            <div ></div>
+                            <div></div>
                             <a id="fbshare" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsopadesenas.com" class="btn-primario py-2 px-4 my-3 d-inline-block sharing">Compartir<i
                                     class="fa-brands fa-facebook ml-2 "></i></a>
                             <a id="twshare" target="_blank" href="https://twitter.com/intent/tweet?url=https://sopadesenas.com&text=Mira%20lo%20incre%C3%ADble%20que%20est%C3%A1" class="btn-primario py-2 px-4 my-3 d-inline-block sharing">Tweet <i
@@ -902,14 +920,14 @@
         </div>
     </section>
 
-     <section id="nota" class="pt-5" style="background: #fda100;background-position: center;background-size: cover;background-attachment: fixed;">
+    <section id="nota" class="pt-5" style="background: #fda100;background-position: center;background-size: cover;background-attachment: fixed;">
         <div class="container step step-3 h-100 pb-5">
             <div class="row row-eq-height h-100 align-items-center">
                 <div class="col-md-6 text-center d-flex align-items-center h-100 bg-cierre videoContainer">
                     <a href="javascript:void(0);" class="mx-auto">
                     </a>
                     <video class="w-100" controls playsinline autoplay loop muted>
-                        <source src="assets/videos/a.mp4"  autoplay loop muted>
+                        <source src="assets/videos/a.mp4" autoplay loop muted>
                     </video>
                 </div>
                 <div class="col-md-6 text-center d-flex align-items-center h-100 bg-naranja">
@@ -945,7 +963,7 @@
                             <img src="assets/img/letras-svg/2/y.svg" class="letra-abc" data-video="assets/videos/y.mp4">
                             <img src="assets/img/letras-svg/2/z.svg" class="letra-abc" data-video="assets/videos/z.mp4">
                         </div>
-                       </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -958,28 +976,30 @@
             <div class="row row-eq-height align-items-center">
                 <div class="col-md-12 text-left mt-5 pt-4">
                     <h1 class="mb-5">Aprende fácil la lengua de señas:</h1>
-                 </div>
+                </div>
                 <div class="col-md-12 text-center p-0 align-items-center h-100 desktop">
                     <div class="topgal">
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal">
                             <p class="title-senas">AMOR</p>
                             <img src="assets/img/corazon_border-min.webp">
-                           <p class="txt-sn">1/25 <span class="ms">VER ></span></span></p>
-                             <!-- Modal -->
-                              <div class="modal fade custom-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <p class="txt-sn">1/25 <span class="ms">VER ></span></span>
+                            </p>
+                            <!-- Modal -->
+                            <div class="modal fade custom-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video1" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/amor.mp4" type="video/mp4" autoplay
+                                                    loop>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video1" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/amor.mp4" type="video/mp4" autoplay loop>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>    
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal2">
                             <p class="title-senas">ABUELO</p>
@@ -987,18 +1007,19 @@
                             <p class="txt-sn">2/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video2" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/abuelo.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video2" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/abuelo.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal3">
                             <p class="title-senas">BAÑO</p>
@@ -1006,18 +1027,18 @@
                             <p class="txt-sn">3/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video3" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/baño.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video3" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/baño.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal4">
                             <p class="title-senas">BESO</p>
@@ -1025,18 +1046,18 @@
                             <p class="txt-sn">4/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video4" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/beso.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video4" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/beso.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal5">
                             <p class="title-senas">BUENOS DÍAS</p>
@@ -1044,18 +1065,19 @@
                             <p class="txt-sn">5/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video5" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/buenos.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video5" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/buenos.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal6">
                             <p class="title-senas">CASA</p>
@@ -1063,18 +1085,18 @@
                             <p class="txt-sn">6/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video6" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/casa.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video6" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/casa.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal7">
                             <p class="title-senas">¿CUÁNTO ES?</p>
@@ -1082,18 +1104,18 @@
                             <p class="txt-sn">7/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video7" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/es.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video7" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/es.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal8">
                             <p class="title-senas">DINERO</p>
@@ -1101,18 +1123,19 @@
                             <p class="txt-sn">8/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video8" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/dinero.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video8" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/dinero.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal9">
                             <p class="title-senas">ESCUELA</p>
@@ -1120,18 +1143,19 @@
                             <p class="txt-sn">9/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video9" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/escuela.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video9" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/escuela.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal10">
                             <p class="title-senas">ESPOSA</p>
@@ -1139,18 +1163,19 @@
                             <p class="txt-sn">10/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video10" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/esposa.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video10" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/esposa.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal11">
                             <p class="title-senas">FIN DE SEMANA</p>
@@ -1158,18 +1183,19 @@
                             <p class="txt-sn">11/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video11" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/semana.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video11" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/semana.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal12">
                             <p class="title-senas">GATO</p>
@@ -1177,18 +1203,18 @@
                             <p class="txt-sn">12/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video12" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/gato.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video12" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/gato.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal13">
                             <p class="title-senas">GRACIAS</p>
@@ -1196,18 +1222,19 @@
                             <p class="txt-sn">13/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video13" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/gracias.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video13" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/gracias.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal14">
                             <p class="title-senas">HIJO</p>
@@ -1215,18 +1242,18 @@
                             <p class="txt-sn">14/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video14" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/hijo.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video14" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/hijo.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal15">
                             <p class="title-senas">JUGAR</p>
@@ -1234,18 +1261,19 @@
                             <p class="txt-sn">15/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video15" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/jugar.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video15" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/jugar.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal16">
                             <p class="title-senas">MAMÁ</p>
@@ -1253,18 +1281,18 @@
                             <p class="txt-sn">16/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video16" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/mama.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video16" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/mama.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal17">
                             <p class="title-senas">PAPÁ</p>
@@ -1272,18 +1300,18 @@
                             <p class="txt-sn">17/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video17" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/papa.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video17" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/papa.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal18">
                             <p class="title-senas">PASTA</p>
@@ -1291,18 +1319,19 @@
                             <p class="txt-sn">18/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video18" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/pasta.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video18" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/pasta.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal19">
                             <p class="title-senas">PERRO</p>
@@ -1310,18 +1339,19 @@
                             <p class="txt-sn">19/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video19" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/perro.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video19" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/perro.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal20">
                             <p class="title-senas">POR FAVOR</p>
@@ -1329,18 +1359,19 @@
                             <p class="txt-sn">20/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video20" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/favor.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video20" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/favor.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal21">
                             <p class="title-senas">¿QUÉ HORA ES?</p>
@@ -1348,18 +1379,18 @@
                             <p class="txt-sn">21/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video21" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/hora.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video21" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/hora.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal22">
                             <p class="title-senas">¿QUIERES COMER?</p>
@@ -1367,18 +1398,19 @@
                             <p class="txt-sn">22/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video22" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/comer.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video22" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/comer.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal23">
                             <p class="title-senas">RICO</p>
@@ -1386,18 +1418,18 @@
                             <p class="txt-sn">23/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video23" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/rico.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video23" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/rico.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal24">
                             <p class="title-senas">SOPA</p>
@@ -1405,18 +1437,18 @@
                             <p class="txt-sn">24/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video24" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/sopa.mp4" type="video/mp4" autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video24" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/sopa.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal25">
                             <p class="title-senas">TRABAJO</p>
@@ -1424,550 +1456,616 @@
                             <p class="txt-sn">25/25 <span class="ms">VER ></span></p>
                             <div class="modal fade custom-modal" id="myModal25" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video controls id="video25" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
+                                                <source src="assets/videos/palabras/trabajo.mp4" type="video/mp4"
+                                                    autoplay>
+                                            </video>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <video controls id="video25" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-                                        <source src="assets/videos/palabras/trabajo.mp4" type="video/mp4" autoplay>
-                                      </video>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-                   <div class="container movil mb-5">
-                       <div class="col-md-12 text-center p-0 align-items-center h-100 movil">
-                                        <div class="topgal">
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModalm">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">AMOR <br>
-                                                <span class="txt-sn">1/24</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModalm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video2">
-                                                            <source src="assets/videos/palabras/amor_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                
+                <div class="container movil mb-5">
+                    <div class="col-md-12 text-center p-0 align-items-center h-100 movil">
+                        <div class="topgal">
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModalm">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">AMOR <br>
+                                    <span class="txt-sn">1/24</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModalm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal2m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">ABUELO <br>
-                                                <span class="txt-sn">2/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal2m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video2m">
-                                                            <source src="assets/videos/palabras/abuelo_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
+                                            <div class="modal-body">
+                                                <video controls id="video2">
+                                                    <source src="assets/videos/palabras/amor_9_16.mp4" type="video/mp4"
+                                                        autoplay>
+                                                </video>
                                             </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal3m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">BAÑO <br>
-                                                <span class="txt-sn">3/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal3m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video3m">
-                                                            <source src="assets/videos/palabras/baño_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal4m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">BESO <br>
-                                                <span class="txt-sn">4/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal4m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video4m">
-                                                            <source src="assets/videos/palabras/beso_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal5m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">BUENOS<br> DÍAS <br>
-                                                <span class="txt-sn">5/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal5m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video5m">
-                                                            <source src="assets/videos/palabras/buenos_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal6m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">CASA <br>
-                                                <span class="txt-sn">6/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal6m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video6m">
-                                                            <source src="assets/videos/palabras/casa_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal7m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">¿CUÁNTO <br>ES? <br>
-                                                <span class="txt-sn">7/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal7m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video7m">
-                                                            <source src="assets/videos/palabras/es_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal8m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">DINERO <br>
-                                                <span class="txt-sn">8/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal8m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video8m">
-                                                            <source src="assets/videos/palabras/dinero_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal9m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">ESCUELA <br>
-                                                <span class="txt-sn">9/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal9m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video9m">
-                                                            <source src="assets/videos/palabras/escuela_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal10m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">ESPOSA <br>
-                                                <span class="txt-sn">10/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal10m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video10m">
-                                                            <source src="assets/videos/palabras/esposa_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                        
                                         </div>
                                     </div>
-                          
-                        <span class="hideText">
-                         <div class="col-md-12 text-center p-0 align-items-center h-100 movil">
-                                        <div class="topgal">
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal11m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">FIN DE<br> SEMANA <br>
-                                                <span class="txt-sn">11/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal11m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video11m">
-                                                            <source src="assets/videos/palabras/semana_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal2m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">ABUELO <br>
+                                    <span class="txt-sn">2/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal2m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal12m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">GATO <br>
-                                                <span class="txt-sn">12/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal12m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video12m">
-                                                            <source src="assets/videos/palabras/gato_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
+                                            <div class="modal-body">
+                                                <video controls id="video2m">
+                                                    <source src="assets/videos/palabras/abuelo_9_16.mp4"
+                                                        type="video/mp4" autoplay>
+                                                </video>
                                             </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal13m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">GRACIAS <br>
-                                                <span class="txt-sn">13/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal13m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video13m">
-                                                            <source src="assets/videos/palabras/gracias_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal14m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">HIJO <br>
-                                                <span class="txt-sn">14/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal14m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video14m">
-                                                            <source src="assets/videos/palabras/hijo_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal15m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">JUGAR <br>
-                                                <span class="txt-sn">15/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal15m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video15m">
-                                                            <source src="assets/videos/palabras/jugar_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal16m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">MAMÁ <br>
-                                                <span class="txt-sn">16/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal16m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video16m">
-                                                            <source src="assets/videos/palabras/mama_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal17m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">PAPÁ <br>
-                                                <span class="txt-sn">17/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal17m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video17m">
-                                                            <source src="assets/videos/palabras/papa_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal18m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">PASTA <br>
-                                                <span class="txt-sn">18/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal18m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video18m">
-                                                            <source src="assets/videos/palabras/pasta_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal19m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">PERRO <br>
-                                                <span class="txt-sn">19/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal19m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video19m">
-                                                            <source src="assets/videos/palabras/perro_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal20m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">POR FAVOR <br>
-                                                <span class="txt-sn">20/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal20m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video20m">
-                                                            <source src="assets/videos/palabras/favor_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal21m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">¿QUÉ HORA<br> ES? <br>
-                                                <span class="txt-sn">21/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal21m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video21m">
-                                                            <source src="assets/videos/palabras/hora_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal22m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">¿QUIERES<br> COMER? <br>
-                                                <span class="txt-sn">22/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal22m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video22m">
-                                                            <source src="assets/videos/palabras/comer_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal23m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">RICO <br>
-                                                <span class="txt-sn">23/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal23m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video23m">
-                                                            <source src="assets/videos/palabras/rico_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal24m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">SOPA <br>
-                                                <span class="txt-sn">24/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal24m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video24m">
-                                                            <source src="assets/videos/palabras/sopa_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal25m">
-                                                <img src="assets/img/senas-3.svg">
-                                                <p class="title-senas">TRABAJO <br>
-                                                <span class="txt-sn">25/25</span> <span class="ms">VER ></span></p>
-                                                 <!-- Modal -->
-                                                  <div class="modal fade custom-modal" id="myModal25m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                    <div class="modal-dialog" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <video controls id="video25m">
-                                                            <source src="assets/videos/palabras/trabajo_9_16.mp4" type="video/mp4" autoplay>
-                                                          </video>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                        
                                         </div>
                                     </div>
-                        </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal3m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">BAÑO <br>
+                                    <span class="txt-sn">3/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal3m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video controls id="video3m">
+                                                    <source src="assets/videos/palabras/baño_9_16.mp4" type="video/mp4"
+                                                        autoplay>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal4m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">BESO <br>
+                                    <span class="txt-sn">4/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal4m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video controls id="video4m">
+                                                    <source src="assets/videos/palabras/beso_9_16.mp4" type="video/mp4"
+                                                        autoplay>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal5m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">BUENOS<br> DÍAS <br>
+                                    <span class="txt-sn">5/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal5m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video controls id="video5m">
+                                                    <source src="assets/videos/palabras/buenos_9_16.mp4"
+                                                        type="video/mp4" autoplay>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal6m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">CASA <br>
+                                    <span class="txt-sn">6/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal6m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video controls id="video6m">
+                                                    <source src="assets/videos/palabras/casa_9_16.mp4" type="video/mp4"
+                                                        autoplay>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal7m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">¿CUÁNTO <br>ES? <br>
+                                    <span class="txt-sn">7/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal7m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video controls id="video7m">
+                                                    <source src="assets/videos/palabras/es_9_16.mp4" type="video/mp4"
+                                                        autoplay>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal8m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">DINERO <br>
+                                    <span class="txt-sn">8/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal8m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video controls id="video8m">
+                                                    <source src="assets/videos/palabras/dinero_9_16.mp4"
+                                                        type="video/mp4" autoplay>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal9m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">ESCUELA <br>
+                                    <span class="txt-sn">9/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal9m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video controls id="video9m">
+                                                    <source src="assets/videos/palabras/escuela_9_16.mp4"
+                                                        type="video/mp4" autoplay>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal10m">
+                                <img src="assets/img/senas-3.svg">
+                                <p class="title-senas">ESPOSA <br>
+                                    <span class="txt-sn">10/25</span> <span class="ms">VER ></span>
+                                </p>
+                                <!-- Modal -->
+                                <div class="modal fade custom-modal" id="myModal10m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video controls id="video10m">
+                                                    <source src="assets/videos/palabras/esposa_9_16.mp4"
+                                                        type="video/mp4" autoplay>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <button class="read-more-btn">Ver más videos</button>
+                        </div>
+                    </div>
 
-                      </div>
+                    <span class="hideText">
+                        <div class="col-md-12 text-center p-0 align-items-center h-100 movil">
+                            <div class="topgal">
+                                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal11m">
+                                    <img src="assets/img/senas-3.svg">
+                                    <p class="title-senas">FIN DE<br> SEMANA <br>
+                                        <span class="txt-sn">11/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal11m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video11m">
+                                                        <source src="assets/videos/palabras/semana_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal12m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">GATO <br>
+                        <span class="txt-sn">12/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal12m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video12m">
+                                                        <source src="assets/videos/palabras/gato_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal13m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">GRACIAS <br>
+                        <span class="txt-sn">13/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal13m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video13m">
+                                                        <source src="assets/videos/palabras/gracias_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal14m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">HIJO <br>
+                        <span class="txt-sn">14/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal14m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video14m">
+                                                        <source src="assets/videos/palabras/hijo_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal15m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">JUGAR <br>
+                        <span class="txt-sn">15/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal15m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video15m">
+                                                        <source src="assets/videos/palabras/jugar_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal16m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">MAMÁ <br>
+                        <span class="txt-sn">16/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal16m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video16m">
+                                                        <source src="assets/videos/palabras/mama_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal17m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">PAPÁ <br>
+                        <span class="txt-sn">17/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal17m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video17m">
+                                                        <source src="assets/videos/palabras/papa_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal18m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">PASTA <br>
+                        <span class="txt-sn">18/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal18m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video18m">
+                                                        <source src="assets/videos/palabras/pasta_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal19m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">PERRO <br>
+                        <span class="txt-sn">19/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal19m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video19m">
+                                                        <source src="assets/videos/palabras/perro_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal20m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">POR FAVOR <br>
+                        <span class="txt-sn">20/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal20m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video20m">
+                                                        <source src="assets/videos/palabras/favor_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal21m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">¿QUÉ HORA<br> ES? <br>
+                        <span class="txt-sn">21/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal21m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video21m">
+                                                        <source src="assets/videos/palabras/hora_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal22m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">¿QUIERES<br> COMER? <br>
+                        <span class="txt-sn">22/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal22m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video22m">
+                                                        <source src="assets/videos/palabras/comer_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal23m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">RICO <br>
+                        <span class="txt-sn">23/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal23m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video23m">
+                                                        <source src="assets/videos/palabras/rico_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal24m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">SOPA <br>
+                        <span class="txt-sn">24/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal24m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video24m">
+                                                        <source src="assets/videos/palabras/sopa_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card_senas" data-toggle="modal" data-target="#myModal25m">
+                    <img src="assets/img/senas-3.svg">
+                    <p class="title-senas">TRABAJO <br>
+                        <span class="txt-sn">25/25</span> <span class="ms">VER ></span>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade custom-modal" id="myModal25m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <video controls id="video25m">
+                                                        <source src="assets/videos/palabras/trabajo_9_16.mp4"
+                                                            type="video/mp4" autoplay>
+                                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
+        </span>
+
+        <button class="read-more-btn">Ver más videos</button>
+
+        </div>
+        </div>
     </section>
 
-<section id="nota" class="pt-5" style="background: #fda100;background-position: center;background-size: cover;background-attachment: fixed;">
+    <section id="nota" class="pt-5" style="background: #fda100;background-position: center;background-size: cover;background-attachment: fixed;">
         <div class="container step step-3 h-100">
             <div class="row row-eq-height h-100 align-items-center">
                 <div class="col-md-6 text-center bg-naranja p-0 d-flex align-items-center h-100 bg-cierre">
                     <video class="w-100" controls playsinline autoplay loop muted>
-                        <source src="assets/videos/cierre.mp4"  autoplay loop muted>
+                        <source src="assets/videos/cierre.mp4" autoplay loop muted>
                     </video>
                 </div>
                 <div class="col-md-6 text-center bg-patron p-0 align-items-center h-100">
@@ -1979,11 +2077,12 @@
                     <p class="p-4 bg-naranja txt-s">Esto es solo un pequeño esfuerzo de <img src="assets/img/8A075ECE.svg" class="img-fluid"> para que todos intentemos aprender señas y facilitar la comunicación entre todos.</p>
 
                     <!-- Copyright -->
-                      <div class="container pleca">
+                    <div class="container pleca">
                         <a class="text-reset fw-bold" href="https://www.aprendiendolsm.com/">
                             <p class="txt-fg bg-naranja">Ingresa aquí si quieres aprender más</p>
-                            <img class="img-fluid align-items-center" src="assets/img/aprendiendo.svg"></a>
-                      </div>
+                            <img class="img-fluid align-items-center" src="assets/img/aprendiendo.svg">
+                        </a>
+                    </div>
                     <!-- Copyright -->
                 </div>
             </div>
@@ -2007,55 +2106,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js " integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
     <!-- Scroll Plugin de fullpage.js -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.css">
-    
+
     <script>
         const buttons = document.querySelectorAll('.read-more-btn');
         const textElements = document.querySelectorAll('.hideText');
 
         buttons.forEach((button, index) => {
-          button.addEventListener('click', () => {
-            const textElement = textElements[index];
-            textElement.classList.toggle('showText');
-          });
+            button.addEventListener('click', () => {
+                const textElement = textElements[index];
+                textElement.classList.toggle('showText');
+            });
         });
 
-        jQuery(document).ready(function () {
-                 $('#myModal').on('shown.bs.modal', function () {
-                  $('#video1')[0].play();
-                })
-                $('#myModal').on('hidden.bs.modal', function () {
-                  $('#video2')[0].pause();
-                })
-              });
+        jQuery(document).ready(function() {
+            $('#myModal').on('shown.bs.modal', function() {
+                $('#video1')[0].play();
+            })
+            $('#myModal').on('hidden.bs.modal', function() {
+                $('#video2')[0].pause();
+            })
+        });
 
-        jQuery(document).ready(function () {
-                 $('#myModalm').on('shown.bs.modal', function () {
-                  $('#video1')[0].play();
-                })
-                $('#myModalm').on('hidden.bs.modal', function () {
-                  $('#video2')[0].pause();
-                })
-              });
+        jQuery(document).ready(function() {
+            $('#myModalm').on('shown.bs.modal', function() {
+                $('#video1')[0].play();
+            })
+            $('#myModalm').on('hidden.bs.modal', function() {
+                $('#video2')[0].pause();
+            })
+        });
 
-        $(function () {
-        $.fn.hScroll = function (amount) {
-        amount = amount || 120;
-        $(this).bind("DOMMouseScroll mousewheel", function (event) {
-        var oEvent = event.originalEvent,
-        direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
-        position = $(this).scrollLeft();
-        position += direction > 0 ? -amount : amount;
-        $(this).scrollLeft(position);
-        event.preventDefault();
-        })
-        };
+        $(function() {
+            $.fn.hScroll = function(amount) {
+                amount = amount || 120;
+                $(this).bind("DOMMouseScroll mousewheel", function(event) {
+                    var oEvent = event.originalEvent,
+                        direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+                        position = $(this).scrollLeft();
+                    position += direction > 0 ? -amount : amount;
+                    $(this).scrollLeft(position);
+                    event.preventDefault();
+                })
+            };
         });
 
         $(document).ready(function() {
-        $('.topgal').hScroll(30); // You can pass (optionally) scrolling amount
+            $('.topgal').hScroll(30); // You can pass (optionally) scrolling amount
         });
 
-        
+
 
         $(".translate-box .head a").click(function() {
 
@@ -2072,6 +2171,7 @@
             return texto
                 .normalize('NFD')
                 .replace(/([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi, "$1")
+                //.replace(/ñ/gi, "nn")
                 .normalize();
         }
 
@@ -2094,6 +2194,8 @@
             var str = eliminarNumeros(str)
             var str = eliminarDiacriticos(str)
             var str = eliminarEspeciales(str)
+                //var str = str.replace(/ñ/gi, "nn")
+                //var str = str.replace(/ /g, "");
 
             console.log(str)
 
@@ -2101,6 +2203,8 @@
             for (var i = 0; i < str.length; i++) {
                 if (str[i] === ' ') {
                     $(".senia div").append('<br/>');
+                } else if (str[i] === 'ñ') {
+                    $(".senia div").append('<img class="letra-abc" src="assets/img/letras-svg/2/' + 'nn' + '.svg">');
                 } else {
                     $(".senia div").append('<img class="letra-abc" src="assets/img/letras-svg/2/' + str[i] + '.svg">');
                 }
@@ -2143,7 +2247,7 @@
             $(".pre-traductor").fadeOut(500);
             $(".traductor").fadeIn(500);
         });
-     
+
         $(window).load(function() {
             $('.preloader').fadeOut('300', function() {
                 $(this).remove();
@@ -2151,65 +2255,65 @@
         });
 
         //create snapshot
-function takeScreenshot() {
-    /*document.getElementById('forShare').style.width="600px"
-    document.getElementById('forShare').style.height="621"*/
-   
-   $('.content.senia.activo .btn-primario').removeClass('d-inline-block')
-   $('.content.senia.activo .btn-primario').addClass('d-none')
-   $('.content.espa').hide()
-    html2canvas(document.querySelector("#forShare")).then(canvas => {
-    document.body.appendChild(canvas)
-    var canvas= document.getElementsByTagName("canvas")
+        function takeScreenshot() {
+            /*document.getElementById('forShare').style.width="600px"
+            document.getElementById('forShare').style.height="621"*/
 
-    var JPEG_QUALITY=0.5;
+            $('.content.senia.activo .btn-primario').removeClass('d-inline-block')
+            $('.content.senia.activo .btn-primario').addClass('d-none')
+            $('.content.espa').hide()
+            html2canvas(document.querySelector("#forShare")).then(canvas => {
+                document.body.appendChild(canvas)
+                var canvas = document.getElementsByTagName("canvas")
 
-    var dataUrl = canvas[0].toDataURL('image/png', JPEG_QUALITY);
-    console.log(dataUrl)
-  
+                var JPEG_QUALITY = 0.5;
 
-    $("canvas").remove();
-   $('.content.senia.activo .btn-primario').removeClass('d-none')
-   $('.content.senia.activo .btn-primario').addClass('d-inline-block')
-   $('.content.espa').show()
-
-   var unix = Math.round(+new Date()/1000);
-   $("#fbshare").attr("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsopadesenas.com/?code="+unix);
-   $("#twshare").attr("href", "https://twitter.com/intent/tweet?url=https://sopadesenas.com/?code="+unix+"&text=Aprende%20tus%20primeras%20palabras%20con%20señas");
+                var dataUrl = canvas[0].toDataURL('image/png', JPEG_QUALITY);
+                console.log(dataUrl)
 
 
-   var fd = new FormData();    
-fd.append( 'data', dataUrl );
-fd.append( 'timestamp', unix );
+                $("canvas").remove();
+                $('.content.senia.activo .btn-primario').removeClass('d-none')
+                $('.content.senia.activo .btn-primario').addClass('d-inline-block')
+                $('.content.espa').show()
 
-var settings = {
-                "async": true,
-                "crossDomain": true,
-                "url": "assets/php/upload1.php",
-                "method": "POST",
-                "headers": {
-                    //'Content-Type':'application/json'
-                    //"cache-control": "no-cache",
-                    //"postman-token": "8540e967-f938-9617-bea5-d02a173511f4"
-                },
-                "processData": false,
-                "contentType": false,
-                "mimeType": "multipart/form-data",
-                "data": fd
-            }
+                var unix = Math.round(+new Date() / 1000);
+                $("#fbshare").attr("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsopadesenas.com/?code=" + unix);
+                $("#twshare").attr("href", "https://twitter.com/intent/tweet?url=https://sopadesenas.com/?code=" + unix + "&text=Aprende%20tus%20primeras%20palabras%20con%20señas");
 
-            $.ajax(settings).done(function(response) {
 
-                console.log(response);
-                
+                var fd = new FormData();
+                fd.append('data', dataUrl);
+                fd.append('timestamp', unix);
+
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "assets/php/upload1.php",
+                    "method": "POST",
+                    "headers": {
+                        //'Content-Type':'application/json'
+                        //"cache-control": "no-cache",
+                        //"postman-token": "8540e967-f938-9617-bea5-d02a173511f4"
+                    },
+                    "processData": false,
+                    "contentType": false,
+                    "mimeType": "multipart/form-data",
+                    "data": fd
+                }
+
+                $.ajax(settings).done(function(response) {
+
+                    console.log(response);
+
+                });
+                /* canvas.toBlob(function(blob) {
+                   console.log('Este es el blob: ', blob);
+                 }, 'image/jpeg', 0.8);*/
+
             });
-   /* canvas.toBlob(function(blob) {
-      console.log('Este es el blob: ', blob);
-    }, 'image/jpeg', 0.8);*/
-    
-});
 
-}
+        }
     </script>
 </body>
 

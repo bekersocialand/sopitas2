@@ -291,6 +291,7 @@
         
         .videoContainer video {
             transition: all 0.5s ease;
+            border-radius: 15px
         }
         
         .videoContainer .cerrarVideo {
@@ -836,7 +837,7 @@
                 float: left;
                 width: 45%;
             }
-            .mov-img{
+            .mov-img {
                 padding-bottom: 0px !important;
             }
             .contenedor-abe {
@@ -844,7 +845,7 @@
                 height: 630px;
                 text-align: justify;
             }
-            .espacio-bg{
+            .espacio-bg {
                 margin-top: -15%;
             }
         }
@@ -941,7 +942,7 @@
                     <a href="javascript:void(0);" class="mx-auto">
                     </a>
                     <video class="w-100" controls playsinline autoplay loop muted>
-                        <source src="assets/videos/a.mp4" autoplay loop muted>
+                        <source data-src="assets/videos/a.mp4" autoplay loop muted>
                     </video>
                 </div>
                 <div class="col-md-6 text-center d-flex align-items-center h-100">
@@ -1007,8 +1008,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video1" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/amor.mp4" type="video/mp4" autoplay
-                                                    loop>
+                                                <source data-src="assets/videos/palabras/amor.mp4" type="video/mp4"
+                                                    autoplay loop>
                                             </video>
                                         </div>
                                     </div>
@@ -1027,7 +1028,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video2" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/abuelo.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/abuelo.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1047,7 +1048,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video3" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/baño.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/baño.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1066,7 +1068,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video4" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/beso.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/beso.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1085,7 +1088,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video5" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/buenos.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/buenos.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1105,7 +1108,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video6" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/casa.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/casa.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1124,7 +1128,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video7" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/es.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/es.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1143,7 +1148,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video8" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/dinero.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/dinero.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1163,7 +1168,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video9" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/escuela.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/escuela.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1183,7 +1188,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video10" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/esposa.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/esposa.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1203,7 +1208,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video11" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/semana.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/semana.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1223,7 +1228,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video12" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/gato.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/gato.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1242,7 +1248,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video13" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/gracias.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/gracias.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1262,7 +1268,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video14" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/hijo.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/hijo.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1281,7 +1288,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video15" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/jugar.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/jugar.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1301,7 +1308,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video16" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/mama.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/mama.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1320,7 +1328,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video17" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/papa.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/papa.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1339,7 +1348,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video18" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/pasta.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/pasta.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1359,7 +1368,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video19" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/perro.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/perro.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1379,7 +1388,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video20" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/favor.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/favor.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1399,7 +1408,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video21" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/hora.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/hora.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1418,7 +1428,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video22" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/comer.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/comer.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1438,7 +1448,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video23" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/rico.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/rico.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1457,7 +1468,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video24" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/sopa.mp4" type="video/mp4" autoplay>
+                                                <source data-src="assets/videos/palabras/sopa.mp4" type="video/mp4"
+                                                    autoplay>
                                             </video>
                                         </div>
                                     </div>
@@ -1476,7 +1488,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <video controls id="video25" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto">
-                                                <source src="assets/videos/palabras/trabajo.mp4" type="video/mp4"
+                                                <source data-src="assets/videos/palabras/trabajo.mp4" type="video/mp4"
                                                     autoplay>
                                             </video>
                                         </div>
@@ -1504,8 +1516,8 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video2">
-                                                    <source src="assets/videos/palabras/amor_9_16.mp4" type="video/mp4"
-                                                        autoplay>
+                                                    <source data-src="assets/videos/palabras/amor_9_16.mp4"
+                                                        type="video/mp4" autoplay>
                                                 </video>
                                             </div>
                                         </div>
@@ -1527,7 +1539,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video2m">
-                                                    <source src="assets/videos/palabras/abuelo_9_16.mp4"
+                                                    <source data-src="assets/videos/palabras/abuelo_9_16.mp4"
                                                         type="video/mp4" autoplay>
                                                 </video>
                                             </div>
@@ -1549,8 +1561,8 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video3m">
-                                                    <source src="assets/videos/palabras/baño_9_16.mp4" type="video/mp4"
-                                                        autoplay>
+                                                    <source data-src="assets/videos/palabras/baño_9_16.mp4"
+                                                        type="video/mp4" autoplay>
                                                 </video>
                                             </div>
                                         </div>
@@ -1571,8 +1583,8 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video4m">
-                                                    <source src="assets/videos/palabras/beso_9_16.mp4" type="video/mp4"
-                                                        autoplay>
+                                                    <source data-src="assets/videos/palabras/beso_9_16.mp4"
+                                                        type="video/mp4" autoplay>
                                                 </video>
                                             </div>
                                         </div>
@@ -1593,7 +1605,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video5m">
-                                                    <source src="assets/videos/palabras/buenos_9_16.mp4"
+                                                    <source data-src="assets/videos/palabras/buenos_9_16.mp4"
                                                         type="video/mp4" autoplay>
                                                 </video>
                                             </div>
@@ -1615,8 +1627,8 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video6m">
-                                                    <source src="assets/videos/palabras/casa_9_16.mp4" type="video/mp4"
-                                                        autoplay>
+                                                    <source data-src="assets/videos/palabras/casa_9_16.mp4"
+                                                        type="video/mp4" autoplay>
                                                 </video>
                                             </div>
                                         </div>
@@ -1637,8 +1649,8 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video7m">
-                                                    <source src="assets/videos/palabras/es_9_16.mp4" type="video/mp4"
-                                                        autoplay>
+                                                    <source data-src="assets/videos/palabras/es_9_16.mp4"
+                                                        type="video/mp4" autoplay>
                                                 </video>
                                             </div>
                                         </div>
@@ -1659,7 +1671,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video8m">
-                                                    <source src="assets/videos/palabras/dinero_9_16.mp4"
+                                                    <source data-src="assets/videos/palabras/dinero_9_16.mp4"
                                                         type="video/mp4" autoplay>
                                                 </video>
                                             </div>
@@ -1681,7 +1693,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video9m">
-                                                    <source src="assets/videos/palabras/escuela_9_16.mp4"
+                                                    <source data-src="assets/videos/palabras/escuela_9_16.mp4"
                                                         type="video/mp4" autoplay>
                                                 </video>
                                             </div>
@@ -1703,7 +1715,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <video controls id="video10m">
-                                                    <source src="assets/videos/palabras/esposa_9_16.mp4"
+                                                    <source data-src="assets/videos/palabras/esposa_9_16.mp4"
                                                         type="video/mp4" autoplay>
                                                 </video>
                                             </div>
@@ -1733,7 +1745,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video11m">
-                                                        <source src="assets/videos/palabras/semana_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/semana_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1756,7 +1768,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video12m">
-                                                        <source src="assets/videos/palabras/gato_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/gato_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1779,7 +1791,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video13m">
-                                                        <source src="assets/videos/palabras/gracias_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/gracias_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1802,7 +1814,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video14m">
-                                                        <source src="assets/videos/palabras/hijo_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/hijo_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1825,7 +1837,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video15m">
-                                                        <source src="assets/videos/palabras/jugar_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/jugar_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1848,7 +1860,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video16m">
-                                                        <source src="assets/videos/palabras/mama_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/mama_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1871,7 +1883,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video17m">
-                                                        <source src="assets/videos/palabras/papa_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/papa_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1894,7 +1906,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video18m">
-                                                        <source src="assets/videos/palabras/pasta_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/pasta_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1917,7 +1929,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video19m">
-                                                        <source src="assets/videos/palabras/perro_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/perro_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1940,7 +1952,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video20m">
-                                                        <source src="assets/videos/palabras/favor_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/favor_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1963,7 +1975,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video21m">
-                                                        <source src="assets/videos/palabras/hora_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/hora_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -1986,7 +1998,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video22m">
-                                                        <source src="assets/videos/palabras/comer_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/comer_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -2009,7 +2021,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video23m">
-                                                        <source src="assets/videos/palabras/rico_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/rico_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -2032,7 +2044,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video24m">
-                                                        <source src="assets/videos/palabras/sopa_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/sopa_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -2055,7 +2067,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <video controls id="video25m">
-                                                        <source src="assets/videos/palabras/trabajo_9_16.mp4"
+                                                        <source data-src="assets/videos/palabras/trabajo_9_16.mp4"
                                                             type="video/mp4" autoplay>
                                                     </video>
                                 </div>
@@ -2079,7 +2091,7 @@
             <div class="row row-eq-height h-100 align-items-center">
                 <div class="col-md-6 text-center bg-naranja p-0 d-flex align-items-center h-100 bg-cierre">
                     <video class="w-100" controls playsinline autoplay loop muted>
-                        <source src="assets/videos/cierre.mp4" autoplay loop muted>
+                        <source data-src="assets/videos/cierre.mp4" autoplay loop muted>
                     </video>
                 </div>
                 <div class="col-md-6 text-center bg-patron p-0 align-items-center h-100">
@@ -2169,7 +2181,7 @@
         });
 
         // Key Press Listener Attachment for #area.
-        $("body").keypress( function (event) {
+        $("body").keypress(function(event) {
 
             // If the key code is not associated with the ENTER key...
             if (event.keyCode == 13) {
@@ -2177,7 +2189,7 @@
                 // ...exit the function.
                 return false;
 
-        }
+            }
 
         });
 
@@ -2336,6 +2348,13 @@
                  }, 'image/jpeg', 0.8);*/
 
             });
+            $('.card_senas').click(function() {
+                var dest = $(this).data('target');
+                var vid = $(dest + " video source").data('src');
+                $(dest + " video source").attr('src', vid)
+                $(dest + " video ")[0].load();
+                // alert(dest + 'algo' + vid)
+            })
 
         }
     </script>

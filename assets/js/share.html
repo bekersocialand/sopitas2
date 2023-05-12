@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NPLQDV5');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="Sopa de Señas | La Moderna" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="https://sopadesenas.com/test.png" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico">
+    <!--link rel="manifest" href="/manifest.json"-->
+    
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Website Title -->
+    <title>Sopa de Señas | La Moderna</title>
+
+    <!-- styles externos -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+
+
+
+
+    <!-- Styles -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ================== Colores ===============================*/
+        
+         :root {
+            --naranja: #dc6d00;
+            --amarillo: #ffd033;
+            --amarillo-sec: #ffdd6c;
+            --blanco: #fff;
+            --txt-lg: 3em;
+            --txt-mmd: 2.5em;
+            --txt-md: 1em;
+            --txt-sm: .8px;
+            --fondo-blanco: #fff !important;
+            --fondo-gris-gradient: radial-gradient(circle, rgba(215, 216, 220, 1) 0%, rgba(252, 252, 253, 1) 50%, rgba(216, 216, 220, 1) 100%);
+        }
+        
+        body * {
+            font-family: 'Barlow', sans-serif;
+        }
+        
+        body {
+            width: 100%;
+            background: var(--naranja);
+        }
+        
+        .preloader {
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            background: var(--naranja);
+            z-index: 999999999;
+        }
+        
+        section {
+            height: 100vh;
+        }
+        
+        section.regular {
+            background-image: url(assets/img/home-bg.jpg);
+            background-repeat: repeat-x;
+            height: 100vh;
+            background-size: auto 100%;
+        }
+        
+        .btn-primario {
+            border-radius: 15px;
+            background: var(--naranja);
+            color: var(--amarillo-sec);
+            transition: all 0.5s ease;
+            box-shadow: 8px 6px 6px rgb(0 0 0 / 20%);
+            border: 1px solid rgba(0, 0, 0, .1);
+        }
+        
+        .btn-primario:hover {
+            background: var(--amarillo-sec);
+            color: var(--naranja);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        .bg-naranja {
+            background-color: var(--naranja);
+        }
+        
+        .bg-amarillo {
+            background-color: var(--amarillo);
+        }
+        
+        .bg-patron {
+            background-image: url(assets/img/home-bg.jpg);
+            background-repeat: repeat-x;
+            background-size: auto 100%;
+        }
+        
+        h1 {
+            font-size: var(--txt-lg);
+            font-weight: bold;
+            color: var(--amarillo);
+        }
+        
+        h2 {
+            font-size: var(--txt-lg);
+            font-weight: bold;
+            color: var(--amarillo);
+        }
+        
+        .texto-standard {
+            font-size: var(--txt-md);
+            color: var(--amarillo);
+        }
+        
+        header {
+            border-bottom: 1px solid var(--amarillo);
+            position: fixed;
+            width: 100%;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, .1);
+            z-index: 9999;
+        }
+        
+        header .navi a {
+            color: var(--amarillo);
+            font-size: var(--txt-md);
+            margin-left: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .step {}
+        
+        .step-2 {
+            background-image: url(assets/img/fondo-sopitas.png);
+            background-position: center;
+            background-size: cover;
+            /* background-attachment: fixed;*/
+        }
+        
+        .translate-box {
+            border-radius: 25px;
+        }
+        
+        .translate-box .head {
+            display: block;
+            border-bottom: 1px solid var(--amarillo-sec);
+            color: var(--amarillo-sec) !important;
+            text-align: left;
+        }
+        
+        .translate-box .head a {
+            color: var(--amarillo-sec);
+            margin-left: 2em;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            display: inline-block;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: .7;
+            transition: all 0.5s ease;
+        }
+        
+        .translate-box .head a.active {
+            opacity: 1;
+            font-weight: bold;
+        }
+        
+        .translate-box .head a:hover {}
+        
+        .translate-box .head a.active::after {
+            content: " ";
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            bottom: 0;
+            height: 3px;
+            background-color: var(--amarillo);
+        }
+        
+        .translate-box .content {
+            max-height: 0px;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+        
+        .translate-box .content.activo {
+            max-height: 10000px;
+            overflow: hidden;
+        }
+        
+        .translate-box textarea {
+            background: transparent;
+            border: none;
+            font-size: var(--txt-lg);
+            color: var(--amarillo);
+            font-weight: bold;
+            width: 100%;
+            height: auto;
+        }
+        
+        .translate-box textarea:focus-visible {
+            border: none;
+            outline: none;
+        }
+        
+        .translate-box textarea::placeholder {
+            color: var(--amarillo);
+        }
+        
+        .senia .sharing {
+            border: 1px solid var(--amarillo)
+        }
+        
+        img.letra-abc {
+            margin: 10px 15px;
+            max-height: 70px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+        
+        img.letra-abc.activo {
+            transform: scale(1.4);
+        }
+        
+        .bg-video {
+            background-image: url(assets/img/placeholder-video.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .bg-black {
+            background: var(--naranja);
+        }
+        
+        .videoContainer {
+            transition: all 0.5s ease;
+            overflow: hidden;
+        }
+        
+        .videoContainer video {
+            transition: all 0.5s ease;
+        }
+        
+        .videoContainer .cerrarVideo {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            cursor: pointer;
+        }
+        
+        .bg-cierre {
+            /*background-image: url(assets/img/cierre.jpg);*/
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+        }
+        
+        .hola-container img.hola-letra,
+        .hola-container img.hola-sena {
+            transition: all 0.5s ease;
+        }
+        
+        .hola-container img.hola-letra {
+            display: none;
+        }
+        
+        .hola-container img.hola-sena {
+            display: block;
+        }
+        
+        .hola-container:hover img.hola-sena {
+            display: none;
+        }
+        
+        .hola-container:hover img.hola-letra {
+            display: block;
+        }
+        .txt-sopita {
+            margin-top: -15%;
+        }
+        .txt-data{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .mmd {
+            font-size: 24px;
+            position: absolute;
+            top: 77%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+       
+        .txt-placa {
+            font-size: var(--txt-md);
+            position: absolute;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+        .pleca {
+            position: absolute;
+            top: 87.5%;
+            margin: auto 0rem;
+        }
+                
+        @media screen and (max-width:992px) {
+            section {
+                height: auto;
+            }
+            .mmd {
+                font-size: var(--txt-mmd);
+                position: absolute;
+                top: 120%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+        }
+        
+        @media screen and (max-width:768px) {
+            .bg-cierre,
+            .bg-video {
+                min-height: 500px !important;
+            }
+            .translate-box .head a {
+                text-align: center;
+                margin: 0 auto;
+            }
+            .translate-box textarea {
+                font-size: var(--txt-md);
+            }
+            .translate-box {
+                width: 90%;
+            }
+        }
+        @media (max-width: 576px){
+            h2 {
+                font-size: var(--txt-md);
+                font-weight: bold;
+                color: var(--amarillo);
+            }
+            header{
+                position: relative;
+                background-color:transparent
+            }
+            header .col-md-6 img{
+                display: block;
+                margin:5px auto;
+            }
+            .mmd {
+                font-size: var(--txt-md);
+                top: 68%;
+            }
+            .txt-placa {
+                font-size: var(--txt-md);
+                position: absolute;
+                left: 38%;
+                transform: translate(-50%, -50%);
+            }
+            .regular.empezar{
+                height:auto;
+                min-height:400px
+            }
+            .bg-cierre, .bg-video {
+                min-height: 400px!important;
+                height: 300px!important;
+            }
+            .translate-box {
+                width: 100%;
+                padding: 0px!important;
+            }
+            .translate-box .content.activo {
+                padding:10px;
+                padding: 10px!important;
+            }
+            .step-3.traductor .col-md-6{
+                height:auto!important;
+            }
+        }
+    </style>
+</head>
+
+<body id="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPLQDV5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v13.0" nonce="joKkkexR"></script>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/logo-self.svg">
+                </div>
+                <div class="col-md-6 text-right navi">
+                    <img src="assets/img/logo_superior.svg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="regular preloader">
+        <div class="container-fluid step step-1 h-100 ">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-12 text-center">
+                        <img src="assets/img/welcome-text.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="regular">
+        <div class="container-fluid step step-1 h-100 ">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-arround">
+                    <div class="col-md-6 mx-auto text-center">
+                        <img src="assets/img/presenta-logo-2.svg" class="w-100">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="regular empezar">
+        <div class="container-fluid step step-2 h-100 pre-traductor">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-12 text-center txt-sopita">
+                        <h1 class="mb-3">Aprende tus primeras palabras con señas.</h1>
+                        <a href="javascript:void(0);" class="btn-primario py-2 px-4 mt-5 scrollBtn">Empezar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid step step-3 h-100 traductor" id="traductor" style="display: none">
+            <div class="row row-eq-height h-100 align-items-center">
+                <div class="col-md-6 text-center bg-naranja p-5 d-flex align-items-center h-100 hola-container">
+                    <img src="assets/img/hola.png" class="img-fluid hola-sena hola">
+                    <img src="assets/img/hola-alt.png" class="img-fluid hola-letra hola">
+
+                </div>
+                <div id="forShare" class="col-md-6 text-center bg-patron py-5 px-2 px-md-5 d-flex align-items-center h-100">
+                    <div  class="translate-box mx-auto p-0 bg-naranja">
+                        <div class="head">
+                            <a href=" javascript:void(0);" class="active" data-translate="espa">Español</a>
+                            <a href=" javascript:void(0);" class="activaSenia" data-translate="senia">Lenguaje de
+                                Señas</a>
+                        </div>
+                        <div class="content activo espa text-left py-2 px-4">
+                            <textarea type="text" value="" placeholder="Escribe algo y tradúcelo a señas" class="textValue"></textarea>
+                        </div>
+                        <div class="content senia">
+                            <div ></div>
+                            <a id="fbshare" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsopadesenas.com" class="btn-primario py-2 px-4 my-3 d-inline-block sharing">Compartir<i
+                                    class="fa-brands fa-facebook ml-2 "></i></a>
+                            <a id="twshare" href="https://twitter.com/intent/tweet?url=https://sopadesenas.com&text=Mira%20lo%20incre%C3%ADble%20que%20est%C3%A1" class="btn-primario py-2 px-4 my-3 d-inline-block sharing">Tweet <i
+                                    class="fa-brands fa-twitter ml-2 "></i></a>
+                        </div>
+
+                        <a href="javascript:void(0)" class="btn-primario py-2 px-4 mt-5 traduce"><strong>Traducir</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="" id="abecedario">
+        <div class="container-fluid step step-3 h-100">
+            <div class="row row-eq-height h-100 align-items-center">
+                <div class="col-md-6 text-center bg-black  p-0 d-flex align-items-center h-100 bg-video videoContainer ">
+                    <a href="javascript:void(0);" class="mx-auto">
+                        <!--img src="assets/img/tocar.svg" class="img-fluid mx-auto playVideo"-->
+                    </a>
+                    <!--i class="fa fa-times text-white  d-none cerrarVideo fa-2x d-none"></i-->
+                    <video class="w-100" controls playsinline autoplay loop muted>
+                        <source src="assets/videos/a.mp4"  autoplay loop muted>
+                    </video>
+                </div>
+                <div class="col-md-6 text-center bg-patron py-5 px-2 px-md-5 d-flex align-items-center h-100">
+                    <div class="translate-box mx-auto p-0 bg-naranja">
+
+                        <div class="content activo espa text-center text-md-left py-2 px-4">
+                            <h2 class="my-3">Abecedario</h2>
+
+                            <img src="assets/img/letras-svg/2/a.svg" class="letra-abc" data-video="assets/videos/a.mp4">
+                            <img src="assets/img/letras-svg/2/b.svg" class="letra-abc" data-video="assets/videos/b.mp4">
+                            <img src="assets/img/letras-svg/2/c.svg" class="letra-abc" data-video="assets/videos/c.mp4">
+                            <img src="assets/img/letras-svg/2/d.svg" class="letra-abc" data-video="assets/videos/d.mp4">
+                            <img src="assets/img/letras-svg/2/e.svg" class="letra-abc" data-video="assets/videos/e.mp4">
+                            <img src="assets/img/letras-svg/2/f.svg" class="letra-abc" data-video="assets/videos/f.mp4">
+                            <img src="assets/img/letras-svg/2/g.svg" class="letra-abc" data-video="assets/videos/g.mp4">
+                            <img src="assets/img/letras-svg/2/h.svg" class="letra-abc" data-video="assets/videos/h.mp4">
+                            <img src="assets/img/letras-svg/2/i.svg" class="letra-abc" data-video="assets/videos/i.mp4">
+                            <img src="assets/img/letras-svg/2/j.svg" class="letra-abc" data-video="assets/videos/j.mp4">
+                            <img src="assets/img/letras-svg/2/k.svg" class="letra-abc" data-video="assets/videos/k.mp4">
+                            <img src="assets/img/letras-svg/2/l.svg" class="letra-abc" data-video="assets/videos/l.mp4">
+                            <img src="assets/img/letras-svg/2/m.svg" class="letra-abc" data-video="assets/videos/m.mp4">
+                            <img src="assets/img/letras-svg/2/n.svg" class="letra-abc" data-video="assets/videos/n.mp4">
+                            <img src="assets/img/letras-svg/2/nn.svg" class="letra-abc" data-video="assets/videos/nn.mp4">
+                            <img src="assets/img/letras-svg/2/o.svg" class="letra-abc" data-video="assets/videos/o.mp4">
+                            <img src="assets/img/letras-svg/2/p.svg" class="letra-abc" data-video="assets/videos/p.mp4">
+                            <img src="assets/img/letras-svg/2/q.svg" class="letra-abc" data-video="assets/videos/q.mp4">
+                            <img src="assets/img/letras-svg/2/r.svg" class="letra-abc" data-video="assets/videos/r.mp4">
+                            <img src="assets/img/letras-svg/2/s.svg" class="letra-abc" data-video="assets/videos/s.mp4">
+                            <img src="assets/img/letras-svg/2/t.svg" class="letra-abc" data-video="assets/videos/t.mp4">
+                            <img src="assets/img/letras-svg/2/u.svg" class="letra-abc" data-video="assets/videos/u.mp4">
+                            <img src="assets/img/letras-svg/2/v.svg" class="letra-abc" data-video="assets/videos/v.mp4">
+                            <img src="assets/img/letras-svg/2/w.svg" class="letra-abc" data-video="assets/videos/w.mp4">
+                            <img src="assets/img/letras-svg/2/x.svg" class="letra-abc" data-video="assets/videos/x.mp4">
+                            <img src="assets/img/letras-svg/2/y.svg" class="letra-abc" data-video="assets/videos/y.mp4">
+                            <img src="assets/img/letras-svg/2/z.svg" class="letra-abc" data-video="assets/videos/z.mp4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container-fluid step step-3 h-100">
+            <div class="row row-eq-height h-100 align-items-center">
+                <div class="col-md-6 text-center bg-naranja p-0 d-flex align-items-center h-100 bg-cierre">
+                    <video class="w-100" controls playsinline autoplay loop muted>
+                        <source src="assets/videos/cierre.mp4"  autoplay loop muted>
+                    </video>
+                </div>
+                <div class="col-md-6 text-center bg-patron p-0 align-items-center h-100" style="background-size: auto 90%;">
+                    <img src="assets/img/mexico.svg" class="d-block m-auto" style="width: 100%">
+                    <h2 class="d-block w-100 d-block p-5 txt-data">
+                        En México hay más de 6 millones de personas con algún tipo de discapacidad auditiva
+                    </h2>
+
+                    <h1 class="d-block w-100 d-block p-5 mmd">Esto es solo un pequeño esfuerzo de <img src="assets/img/8A075ECE.svg" class="img-fluid"> para que todos intentemos aprender señas y facilitar la comunicación entre todos.</h1>
+
+                    <!-- Copyright -->
+                      <div class="container pleca">
+                        <a class="text-reset fw-bold" href="https://www.aprendiendolsm.com/">
+                            <img class="img-fluid align-items-center" src="assets/img/logo_pleca.svg"></a>
+                      </div>
+                    <!-- Copyright -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--canvas style="width: 1200px; height: 630px; display: none;"></canvas-->
+
+<div id="esc" style="display: block;"><p>holaaaa</p></div>
+
+
+
+    <!-- Scripts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js " integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js " integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <!-- Scroll Plugin de fullpage.js -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.css">
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="assets/js/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.29.0/js/canvas-to-blob.min.js" integrity="sha512-zkt2aBQ0jhSXjI6VhJegNqBN3Kqlbi7PxpxOpELGoKtRGSuPOVGvetuTixdhQSuRefsFKroRgWRwQDpRcMd3+A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".translate-box .head a").click(function() {
+
+            var lang = $(this).data("translate")
+            $(".translate-box .head a.active").removeClass("active")
+            $(this).addClass("active");
+            $("#traductor .content.activo").removeClass("activo").delay(700).queue(function() {
+                $("#traductor ." + lang).addClass("activo").dequeue();
+            });
+
+        })
+
+        function eliminarDiacriticos(texto) {
+            return texto
+                .normalize('NFD')
+                .replace(/([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi, "$1")
+                .normalize();
+        }
+
+        function eliminarNumeros(texto) {
+            return texto.replace(/[0-9]/g, '')
+        }
+
+        function eliminarEspeciales(texto) {
+            return texto.replace(/[~`!@#$%^&*()+={}\[\];:\'\"<>.,\/\\\?-_¨¡´]/g, '');
+        }
+
+        function minusculas(texto) {
+            return texto.toLowerCase();
+        }
+
+        $(".traduce").click(function() {
+            var str = $(".textValue").val()
+            var str = minusculas(str)
+            var str = eliminarNumeros(str)
+            var str = eliminarDiacriticos(str)
+            var str = eliminarEspeciales(str)
+
+            console.log(str)
+
+            $(".senia div").empty();
+            for (var i = 0; i < str.length; i++) {
+                if (str[i] === ' ') {
+                    $(".senia div").append('<br/>');
+                }  
+                else if (str[i] === 'ñ'){ 
+                    $(".senia div").append('<img class="letra-abc" src="assets/img/letras-svg/2/' + 'nn' + '.svg">');
+                }
+                else {
+                    $(".senia div").append('<img class="letra-abc" src="assets/img/letras-svg/2/' + str[i] + '.svg">');
+                }
+
+            }
+            $(".activaSenia").click()
+            setTimeout(takeScreenshot,1500)
+        })
+
+
+        $(".playVideo").click(function() {
+            $(".videoContainer").addClass("bg-black")
+            $(this).addClass("d-none")
+            $(".videoContainer video").removeClass("d-none")
+            $(".videoContainer i").removeClass("d-none")
+            $(".videoContainer video")[0].play()
+        })
+        $(".cerrarVideo").click(function() {
+            $(".videoContainer").removeClass("bg-black")
+            $(".playVideo").removeClass("d-none")
+            $(".videoContainer video").attr("src", "assets/img/video.mp4")
+            $(".videoContainer video").addClass("d-none")
+            $(".videoContainer i").addClass("d-none")
+            $(".videoContainer video")[0].pause();
+            $(".videoContainer video")[0].currentTime = 0;
+            $(".videoContainer video")[0].load();
+        })
+        $("img.letra-abc").click(function() {
+            $("img.letra-abc.activo").removeClass("activo");
+            $(this).addClass("activo");
+            var videoVal = $(this).data("video");
+            $(".videoContainer").addClass("bg-black")
+            $(".playVideo").addClass("d-none")
+            $(".videoContainer video").removeClass("d-none")
+            $(".videoContainer i").removeClass("d-none")
+            $(".videoContainer video").attr("src", videoVal)
+            $(".videoContainer video")[0].play()
+        })
+
+        $('.scrollBtn').on('click', function() {
+            $(".pre-traductor").fadeOut(500);
+            $(".traductor").fadeIn(500);
+        });
+        if ($(window).width() > 960) {
+            const sections = document.querySelectorAll("section:not(.preloader)");
+
+            // this scrolling object just allows us to conveniently call scrolling.enable(), scrolling.disable(), and check if scrolling.enabled is true. 
+            // some browsers (like iOS Safari) handle scrolling on a separate thread and can cause things to get out of sync (jitter/jumpy), so when we're animating the scroll position, force an update of GSAP tweens when there's a scroll event in order to maintain synchronization)
+            const scrolling = {
+                enabled: true,
+                events: "scroll,wheel,touchmove,pointermove".split(","),
+                prevent: e => e.preventDefault(),
+                disable() {
+                    if (scrolling.enabled) {
+                        scrolling.enabled = false;
+                        window.addEventListener("scroll", gsap.ticker.tick, {
+                            passive: true
+                        });
+                        scrolling.events.forEach((e, i) => (i ? document : window).addEventListener(e, scrolling.prevent, {
+                            passive: false
+                        }));
+                    }
+                },
+                enable() {
+                    if (!scrolling.enabled) {
+                        scrolling.enabled = true;
+                        window.removeEventListener("scroll", gsap.ticker.tick);
+                        scrolling.events.forEach((e, i) => (i ? document : window).removeEventListener(e, scrolling.prevent));
+                    }
+                }
+            };
+
+
+            function goToSection(section, anim, i) {
+                if (scrolling.enabled) { // skip if a scroll tween is in progress
+                    scrolling.disable();
+                    gsap.to(window, {
+                        scrollTo: {
+                            y: section,
+                            autoKill: false
+                        },
+                        onComplete: scrolling.enable,
+                        duration: 1
+                    });
+
+                    anim && anim.restart();
+                }
+            }
+
+            sections.forEach((section, i) => {
+                const intoAnim = gsap.from(section.querySelector(".right-col"), {
+                    yPercent: 50,
+                    duration: 1,
+                    paused: true
+                });
+
+                ScrollTrigger.create({
+                    trigger: section,
+                    start: "top bottom-=1",
+                    end: "bottom top+=1",
+                    onEnter: () => goToSection(section, intoAnim),
+                    onEnterBack: () => goToSection(section)
+                });
+
+            });
+            //LINKS CON ANCLAS
+            /*  document.querySelectorAll('a').forEach(function(link) {
+                  link.addEventListener('click', function(event) {
+                      scrolling.disable();
+                      event.preventDefault();
+                      const scrollToHere = link.getAttribute('href')
+                      var tl = new TimelineMax({
+                          onComplete: someFunction
+                      });
+                      tl.to(window, {
+                          duration: 2,
+                          scrollTo: scrollToHere
+                      });
+                  })
+
+                  function someFunction() {
+                      scrolling.enable();
+                  }
+
+              })*/
+
+
+        }
+        $(window).load(function() {
+            $('.preloader').fadeOut('500', function() {
+                $(this).remove();
+            });
+        });
+
+
+//create snapshot
+function takeScreenshot() {
+    /*document.getElementById('forShare').style.width="600px"
+    document.getElementById('forShare').style.height="621"*/
+   
+   $('.btn-primario').removeClass('d-inline-block')
+   $('.btn-primario').addClass('d-none')
+   $('.content.espa').hide()
+    html2canvas(document.querySelector("#forShare")).then(canvas => {
+    document.body.appendChild(canvas)
+    var canvas= document.getElementsByTagName("canvas")
+
+    var JPEG_QUALITY=0.5;
+
+    var dataUrl = canvas[0].toDataURL('image/jpeg', JPEG_QUALITY).replace('data:image/jpeg;base64,', '');
+    console.log(dataUrl)
+  
+
+
+   $('content.senia.activo .btn-primario').removeClass('d-none')
+   $('content.senia.activo .btn-primario').addClass('d-inline-block')
+   $('.content.espa').show()
+
+
+   jQuery.ajax({
+    url: 'assets/php/upload.php',
+    data: dataUrl,
+    cache: false,
+    contentType: false,
+    processData: false,
+    type: 'POST',
+    success: function(data){            
+    }
+});
+   /* canvas.toBlob(function(blob) {
+      console.log('Este es el blob: ', blob);
+    }, 'image/jpeg', 0.8);*/
+    
+});
+}
+
+
+
+    </script>
+</body>
+
+
+</html>
